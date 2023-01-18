@@ -5,6 +5,7 @@ import styles from "./styles.module.scss";
 import { useContext } from "react";
 import { Pagination } from "../../components/Pagination";
 import { usePagination } from "../../hooks/usePagination";
+import { Filters } from "../../components/Filters";
 
 export const Home = () => {
 	const { pokemonsFiltered } = useContext(PokemonContext);
@@ -18,6 +19,7 @@ export const Home = () => {
 					<span>Pokédex</span>
 				</div>
 			</header>
+			<Filters />
 			<PokemonList
 				page={page}
 				perPage={perPage}
