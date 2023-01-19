@@ -13,7 +13,6 @@
 		max-width: 650px;
 		width: 95%;
 		background-color: white;
-		// height: 65vh;
 		bottom: 0;
 		position: relative;
 		margin-bottom: 1rem;
@@ -44,7 +43,7 @@
 @media only screen and (max-width: 575px) {
 	.bg {
 		padding-bottom: 8em;
-		padding-top: 8em;
+		padding-top: 2em;
 		.info {
 			img {
 				width: 60%;

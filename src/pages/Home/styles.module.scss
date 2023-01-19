@@ -1,7 +1,12 @@
 .home {
 	max-width: 100vw;
 	min-height: 100vh;
-	background-color: #f7f7f7;
+
+	background: linear-gradient(
+		90deg,
+		rgba(2, 0, 36, 1) 0%,
+		rgba(0, 212, 255, 0.8029586834733894) 100%
+	);
 
 	header {
 		padding: 1rem 0;
@@ -21,7 +26,7 @@
 		}
 
 		span {
-			color: #212121;
+			color: white;
 			font-size: 24px;
 			line-height: 32px;
 			font-weight: 700;

@@ -21,7 +21,7 @@ export const Pagination = ({
 			<button onClick={previousPage} disabled={page === 1}>
 				&lt;
 			</button>
-			<span>{page}</span>
+			<span style={{ color: "white" }}>{page}</span>
 			<button disabled={page === lastPage} onClick={nextPage}>
 				&gt;
 			</button>

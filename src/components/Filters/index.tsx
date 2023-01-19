@@ -24,7 +24,7 @@ export const Filters = () => {
 		<div className={styles.ordersContainer} onClick={() => setOpen(!open)}>
 			<div className={styles.container}>
 				<div className={open ? styles.orderClose : styles.orderOpen}>
-					<span>{filterSelected?.name}</span>
+					<span style={{ color: "white" }}>{filterSelected?.name}</span>
 					<FiltersIcon />
 				</div>
 				{open && types && (
