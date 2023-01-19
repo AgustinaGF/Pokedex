@@ -16,7 +16,7 @@ interface ContexProps {
 export const PokemonContext = createContext<ContexProps>({} as ContexProps);
 
 const PokemonProvider = ({ children }: any) => {
-	let allPokemonUrl = "https://pokeapi.co/api/v2/pokemon?limit=10000&offset=0";
+	let allPokemonUrl = `${import.meta.env.VITE_REACT_URL}?limit=10000&offset=0`;
 
 	const defaultState: PokeType = {
 		name: "All",
@@ -41,8 +41,9 @@ const PokemonProvider = ({ children }: any) => {
 	};
 
 	const getAllPokemonsType = async () => {
-		const { data } = await axios.get("https://pokeapi.co/api/v2/type");
-		console.log(data);
+		const { data } = await axios.get(
+			`${import.meta.env.VITE_REACT_POKEMON_TYPE}`
+		);
 		setTypes([...types, ...data.results]);
 	};
 
