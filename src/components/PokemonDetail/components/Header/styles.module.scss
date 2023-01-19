@@ -44,3 +44,12 @@ header {
 		width: 250px;
 	}
 }
+@media only screen and (max-width: 575px) {
+	header {
+		.left {
+			span {
+				font-size: 17px;
+			}
+		}
+	}
+}
